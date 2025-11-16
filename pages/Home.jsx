@@ -1,9 +1,11 @@
-import InfoSection from "../components/infoSection/InfoSection";
-import PageHeader from "../components/pageHeader/PageHeader";
-import Reviews from "../components/reviews/Reviews";
-import logo from "/logo.png";
-import bgImg from "../assets/image_00.jpg";
-import gitte from "../assets/gitte.jpg";
+import InfoSection from "../src/components/infoSection/InfoSection";
+import PageHeader from "../src/components/pageHeader/PageHeader";
+import Reviews from "../src/components/reviews/reviews";
+{
+  /*import logo from "/logo.png"; */
+}
+// import bgImg from "../assets/image_00.jpg";
+// import gitte from "../assets/gitte.jpg";
 
 const Home = () => {
   return (
@@ -12,17 +14,10 @@ const Home = () => {
       Vi sender derfor props/properties/egenskaber med <PageHeader/>-komponenten,
       der viser dem hvis de har en værdi.
       */}
-      <PageHeader
-        logo={logo}
-        titleOne="Gittes"
-        titleTwo="Glamping"
-        bgImg={bgImg}
-        button
-      />
+      <PageHeader titleOne="Gittes" titleTwo="Glamping" button />
       <InfoSection
         title="Kom og prøv glamping hos Gitte"
         button
-        img={gitte}
         description="Vi er stolte af at byde dig velkommen til Gitte’s Glamping, hvor
         hjertevarme og omsorg møder naturens skønhed og eventyr. Vores
         dedikerede team, anført af Gitte selv, er her for at skabe den perfekte
